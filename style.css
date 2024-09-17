@@ -1,0 +1,21 @@
+.milestone {
+    text-align: center;
+  }
+  
+  .animated-div {
+    transition: color 0.5s ;
+  }
+  
+  .animated-div:hover {
+    color: SkyBlue;
+  }
+  
+  h1, h2 {
+    color: Red;
+    font-size: 40px;
+    font-family: Fantasy;
+  }
+  
+  .centered {
+    text-align: center;
+  }
