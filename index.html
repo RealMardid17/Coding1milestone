@@ -6,6 +6,32 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #fffffff6;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+      border-radius: 5px;
     }
 
     h2 {
@@ -14,7 +40,7 @@
 
     #milestones {
       padding-left: 20px;
-      color:#ff07ea
+      color: #ff07ea;
       margin-bottom: 20px;
     }
 
@@ -40,16 +66,14 @@
     table {
       border-collapse: collapse;
       width: 100%;
+      margin-top: 20px;
     }
 
-    #th {
+    #th, #td {
       border: 1px solid #ccc;
       padding: 10px;
       text-align: left;
-    } 
-    #td{border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;}
+    }
 
     .milestone1 {
       background-color: #f7f7f7;
@@ -78,7 +102,16 @@
   </style>
 </head>
 <body>
-  <h1>iPhone Development History</h1>
+  <nav>
+    <a href="iphone2007.html">Iphone 2007</a>
+    <a href="iphone 3g.html">Iphone 3</a>
+    <a href="iphone 4.html">Iphone 4</a>
+    <a href="iphone 5.html">Iphone 5</a>
+    <a href="iphone 6.html">Iphone 6</a>
+
+  </nav>
+
+  <h1 id="top">iPhone Development History</h1>
   <ul id="milestones">
     <li class="milestone1">
       <h2>iPhone (2007)</h2>
@@ -117,7 +150,7 @@
     </li>
   </ul>
 
-  <table>
+  <table id="table">
     <tr class="row">
       <th id="th">The Evolution of the iPhone</th>
       <th id="th">Release Year</th>
@@ -126,18 +159,18 @@
       <th id="th">Storage Capacity</th>
     </tr>
     <tr class="row">
-      <td id="th">iPhone 15</td>
-      <td id="th">2024</td>
-      <td id="th">6.1 inch.</td>
-      <td id="th">48mp</td>
-      <td id="th">512GB</td>
+      <td id="td">iPhone 15</td>
+      <td id="td">2024</td>
+      <td id="td">6.1 inch.</td>
+      <td id="td">48mp</td>
+      <td id="td">512GB</td>
     </tr>
     <tr class="row">
-      <td id="th">iPhone 1</td>
-      <td id="th">2007</td>
-      <td id="th">3.5 inch.</td>
-      <td id="th">2mp</td>
-      <td id="th">4GB</td>
+      <td id="td">iPhone 1</td>
+      <td id="td">2007</td>
+      <td id="td">3.5 inch.</td>
+      <td id="td">2mp</td>
+      <td id="td">4GB</td>
     </tr>
   </table>
 </body>
